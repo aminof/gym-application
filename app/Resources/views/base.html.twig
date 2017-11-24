@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href="{{asset('front_public/css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+            <link href="{{asset('front_public/css/style.css')}}" rel='stylesheet' type='text/css' />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+        {% endblock %}
+
+    {% block javascripts %}
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="{{asset('front_public/js/jquery.min.js')}}"></script>
+    <!-- grid-slider -->
+    <script type="text/javascript" src="{{asset('front_public/js/jquery.mousewheel.js')}}"></script>
+    <script type="text/javascript" src="{{asset('front_public/js/jquery.contentcarousel.js')}}"></script>
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>

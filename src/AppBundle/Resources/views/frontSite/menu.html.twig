@@ -1,0 +1,59 @@
+
+<div class="menu">
+    <div class="container">
+        <div class="logo">
+            <a href="{{path('home')}}"><img src="{{asset('front_public/images/logo.png')}}" alt=""/></a>
+        </div>
+        <div class="h_menu4"><!-- start h_menu4 -->
+            <a class="toggleMenu" href="#">Menu</a>
+            <ul class="nav">
+                
+                {% if selec == 'home' %}
+                    <li class="active"><a>Home</a></li>
+                {% else %}
+                    <li><a href="{{path('home2')}}">Home</a></li>
+                {% endif%}
+                
+                {% if selec == 'about' %}
+                    <li class="active"><a>About</a></li>
+                {% else %}
+                    <li><a href="{{path('about')}}">About</a></li>
+                {% endif%}
+                
+                {% if selec == 'trainers' %}
+                    <li class="active"><a>Trainers</a></li>
+                {% else %}
+                    <li><a href="{{path('trainers')}}">Trainers</a></li>
+                {% endif%}
+                
+                {% if selec == 'classes' %}
+                    <li class="active"><a>Classes</a></li>
+                {% else %}
+                    <li><a href="{{path('classes')}}">Classes</a></li>
+                {% endif%}
+                
+                {% if selec == 'blog' %}
+                    <li class="active"><a>Blog</a></li>
+                {% else %}
+                    <li><a href="{{path('blog')}}">Blog</a></li>
+                {% endif%}
+                
+                {% if selec == 'pricing' %}
+                    <li class="active"><a>Pricing</a></li>
+                {% else %}
+                    <li><a href="{{path('pricing')}}">Pricing</a></li>
+                {% endif%}
+                
+                {% if selec == 'contact' %}
+                    <li class="active"><a>Contact</a></li>
+                {% else %}
+                    <li><a href="{{path('contact')}}">Contact</a></li>
+                {% endif%}
+                
+            </ul>
+            <script type="text/javascript" src="{{asset('front_public/js/nav.js')}}"></script>
+        </div><!-- end h_menu4 -->
+        <div class="clear"></div>
+    </div>
+</div>
+        
